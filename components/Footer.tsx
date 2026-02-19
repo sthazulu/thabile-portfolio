@@ -1,51 +1,89 @@
-import { FaLocationArrow } from "react-icons/fa6";
-
-import { socialMedia } from "@/data";
-import MagicButton from "./MagicButton";
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
-      {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
-          src="/footer-grid.svg"
-          alt="grid"
-          className="w-full h-full opacity-50 "
-        />
+    <footer className="w-full pt-10 pb-10" id="contact">
+      <div className="flex flex-col gap-6">
+
+        <h1 className="heading lg:max-w-[45vw]">
+          Ready to <span className="text-purple">connect</span> and collaborate?
+        </h1>
+        <p className="text-white-200 max-w-xl text-sm leading-relaxed">
+          I&apos;m actively seeking entry-level roles in Data Analytics, Data Engineering,
+          and Data Science. Feel free to reach out — I&apos;d love to connect.
+        </p>
+
+        {/* Contact details */}
+        <div
+          className="rounded-2xl border border-white/[0.1] p-6 flex flex-col gap-4 max-w-sm"
+          style={{
+            background: "rgb(4,7,29)",
+            backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+          }}
+        >
+          <a
+            href="mailto:sthazulu002@gmail.com"
+            className="flex items-center gap-3 text-white-200 text-sm hover:text-purple transition-colors duration-200"
+          >
+            <FaEnvelope size={15} className="text-purple shrink-0" />
+            sthazulu002@gmail.com
+          </a>
+          <a
+            href="tel:+27611579439"
+            className="flex items-center gap-3 text-white-200 text-sm hover:text-purple transition-colors duration-200"
+          >
+            <FaPhone size={15} className="text-purple shrink-0" />
+            +27 611 579 439
+          </a>
+          <div className="flex items-center gap-3 text-white-200 text-sm">
+            <FaLocationDot size={15} className="text-purple shrink-0" />
+            Johannesburg, Gauteng
+          </div>
+          <a
+            href="https://www.linkedin.com/in/thabile-zulu-507976201/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 text-white-200 text-sm hover:text-purple transition-colors duration-200"
+          >
+            <FaLinkedin size={15} className="text-purple shrink-0" />
+            linkedin.com/in/thabile-zulu-507976201
+          </a>
+          <a
+            href="https://github.com/sthazulu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 text-white-200 text-sm hover:text-purple transition-colors duration-200"
+          >
+            <FaGithub size={15} className="text-purple shrink-0" />
+            github.com/sthazulu
+          </a>
+        </div>
       </div>
 
-      <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
-        </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
-        </p>
-        <a href="mailto:contact@jsmastery.pro">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
-      </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Adrian Hajdin
+      <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-4">
+        <p className="text-white-200 md:text-base text-sm md:font-normal font-light">
+          Copyright &copy; 2025 Thabile Zulu
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
-            <div
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-            >
-              <img src={info.img} alt="icons" width={20} height={20} />
-            </div>
-          ))}
+          <a
+            href="https://github.com/sthazulu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 hover:border-purple/30 transition-colors duration-200"
+            aria-label="GitHub"
+          >
+            <FaGithub size={18} className="text-white-200" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/thabile-zulu-507976201/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 hover:border-purple/30 transition-colors duration-200"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin size={18} className="text-white-200" />
+          </a>
         </div>
       </div>
     </footer>

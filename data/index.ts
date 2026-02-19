@@ -1,203 +1,120 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Skills", link: "#skills" },
+  { name: "Certifications", link: "#certifications" },
   { name: "Contact", link: "#contact" },
-];
-
-export const gridItems = [
-  {
-    id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
-
-  {
-    id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
-  },
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "Sales Data Analysis Dashboard",
+    des: "Built an interactive sales dashboard using Excel and Power BI to visualise revenue trends, regional performance, and key business KPIs.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "https://github.com/sthazulu",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Python Data Analysis Project",
+    des: "Conducted exploratory data analysis on a public dataset using Python, Pandas, and Matplotlib to identify trends and visualise insights.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://github.com/sthazulu",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Cloud-Based Data Solution",
+    des: "Designed a basic cloud architecture demo using AWS and Azure services to demonstrate data storage, processing, and retrieval concepts.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "https://github.com/sthazulu",
   },
 ];
 
-export const testimonials = [
+export const skills = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Writing SQL queries for data extraction, cleaning, and analysis — including SELECT, JOINs, aggregations, subqueries, and filtering techniques.",
+    name: "SQL",
+    title: "Data Querying",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Using Pandas, NumPy, Matplotlib, and Seaborn for data cleaning, manipulation, analysis, and visualisation in Jupyter Notebooks.",
+    name: "Python",
+    title: "Data Programming",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Building interactive dashboards, pivot tables, and reports in Power BI and Microsoft Excel to communicate data insights clearly to stakeholders.",
+    name: "Power BI & Excel",
+    title: "Data Visualisation",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Azure Data Fundamentals (DP-900) certified — understanding of core Azure data services, cloud storage, and cloud analytics concepts.",
+    name: "Microsoft Azure",
+    title: "Cloud Data Services",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "AWS Re/Start graduate with hands-on exposure to AWS cloud services, Linux, Python scripting, networking, and cloud security fundamentals.",
+    name: "AWS Cloud",
+    title: "Cloud & Infrastructure",
   },
 ];
 
-export const companies = [
+export const skillCategories = [
+  "SQL & Databases",
+  "Python",
+  "Power BI & Excel",
+  "Data Cleaning & Reporting",
+  "Microsoft Azure",
+  "AWS Cloud",
+  "Pandas & NumPy",
+  "Matplotlib & Seaborn",
+  "Git",
+  "ETL & ELT Basics",
+];
+
+export const certifications = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
-
-export const workExperience = [
-  {
-    id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Microsoft Azure Data Fundamentals (DP-900)",
+    desc: "Microsoft-certified credential covering core Azure data concepts, relational and non-relational data, and cloud analytics services.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
+    issuer: "Microsoft — 2026",
+    link: "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "AWS Cloud Practitioner Certificate",
+    desc: "Earned through the AWS Re/Start Graduate Programme — covering Python, databases, Linux, networking, cloud security, and core AWS services.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
+    issuer: "Amazon Web Services",
+    link: "https://www.credly.com/go/20XwkbKKhRU27loqHmFb9A",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Cisco Data Analytics Essentials",
+    desc: "Foundational training covering data types, data wrangling, statistics, visualisation, and analytical thinking skills.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
+    issuer: "Cisco Networking Academy",
+    link: "https://www.credly.com/badges/d72e40b4-1ed7-4a6d-b1e6-f703365ab79c",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Data Science Boot Camp",
+    desc: "Comprehensive data science training covering statistics, machine learning, data visualisation, and Python for data science. Currently in progress.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
+    issuer: "Udemy — In Progress",
+    link: "#",
   },
 ];
 
@@ -205,13 +122,11 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/sthazulu",
   },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/thabile-zulu-507976201/",
   },
 ];

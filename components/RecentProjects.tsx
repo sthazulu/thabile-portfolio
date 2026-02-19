@@ -1,80 +1,95 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
-
+import { FaGithub, FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
-import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <div className="py-20" id="projects">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        Featured <span className="text-purple">projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
+            className="rounded-3xl border border-white/[0.1] flex flex-col overflow-hidden hover:shadow-xl transition duration-200"
+            style={{
+              background: "rgb(4,7,29)",
+              backgroundColor:
+                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+            }}
           >
-            <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+            {/* Image banner */}
+            <div
+              className="relative h-40 flex items-center justify-center overflow-hidden"
+              style={{ backgroundColor: "#13162D" }}
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
-                  <img src="/bg.png" alt="bgimg" />
-                </div>
-                <img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
-                />
-              </div>
+              <img
+                src="/bg.png"
+                alt="bg"
+                className="absolute inset-0 w-full h-full object-cover opacity-60"
+              />
+              <img
+                src={item.img}
+                alt={item.title}
+                className="relative z-10 h-20 w-20 object-contain"
+              />
+            </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+            {/* Content */}
+            <div className="p-6 flex flex-col flex-1 gap-3">
+              <h2 className="font-bold text-white text-base leading-snug">
                 {item.title}
-              </h1>
-
+              </h2>
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
+                className="text-sm leading-relaxed flex-1"
+                style={{ color: "#BEC1DD" }}
               >
                 {item.des}
               </p>
 
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon5" className="p-2" />
-                    </div>
-                  ))}
-                </div>
-
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
+              {/* Tech icons */}
+              <div className="flex items-center gap-1 mt-1">
+                {item.iconLists.map((icon, index) => (
+                  <div
+                    key={index}
+                    className="border border-white/[.2] rounded-full bg-black w-8 h-8 flex justify-center items-center"
+                    style={{ transform: `translateX(-${5 * index + 2}px)` }}
+                  >
+                    <img src={icon} alt="tech" className="p-2" />
+                  </div>
+                ))}
               </div>
-            </PinContainer>
+
+              {/* GitHub link */}
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 flex items-center gap-2 text-sm text-purple font-medium hover:underline"
+              >
+                <FaGithub size={14} />
+                View on GitHub
+                <FaLocationArrow size={11} />
+              </a>
+            </div>
           </div>
         ))}
+      </div>
+
+      {/* GitHub CTA */}
+      <div className="mt-10 flex justify-center">
+        <a
+          href="https://github.com/sthazulu"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-6 py-3 rounded-full border border-purple/30 text-purple bg-purple/10 text-sm font-semibold hover:bg-purple/20 transition duration-200"
+        >
+          <FaGithub size={16} />
+          View all projects on GitHub
+        </a>
       </div>
     </div>
   );
