@@ -22,7 +22,7 @@ const AboutSection = () => {
       >
         <div className="flex flex-col sm:flex-row gap-0">
           {/* Photo */}
-          <div className="sm:w-52 shrink-0 relative h-56">
+          <div className="sm:w-52 shrink-0 relative h-80 sm:h-56">
             <Image
               src="/thabile.jpg"
               alt="Thabile Zulu"
