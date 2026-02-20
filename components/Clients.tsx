@@ -7,19 +7,11 @@ import { InfiniteMovingCards } from "./ui/InfiniteCards";
 const Clients = () => {
   return (
     <section id="skills" className="py-20">
-      <h1 className="heading">
-        Technical <span className="text-purple">skills &amp; tools</span>
+      <h1 className="heading -mt-10 mb-8">
+        Skills &amp; <span className="text-purple">Tools</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
-        <div className="h-[50vh] md:h-[24rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
-          <InfiniteMovingCards
-            items={skills}
-            direction="right"
-            speed="slow"
-          />
-        </div>
-
         <div className="flex flex-wrap items-center justify-center gap-3 max-lg:mt-6">
           {skillCategories.map((cat, i) => (
             <span
@@ -29,6 +21,14 @@ const Clients = () => {
               {cat}
             </span>
           ))}
+        </div>
+
+        <div className="h-[50vh] md:h-[24rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
+          <InfiniteMovingCards
+            items={skills}
+            direction="right"
+            speed="slow"
+          />
         </div>
       </div>
     </section>

@@ -3,14 +3,14 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaLocationDot } from "react-
 const Footer = () => {
   return (
     <footer className="w-full pt-10 pb-10" id="contact">
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 items-center">
 
         <h1 className="heading lg:max-w-[45vw]">
           Ready to <span className="text-purple">connect</span> and collaborate?
         </h1>
         <p className="text-white-200 max-w-xl text-sm leading-relaxed">
-          I&apos;m actively seeking entry-level roles in Data Analytics, Data Engineering,
-          and Data Science. Feel free to reach out — I&apos;d love to connect.
+          I am seeking entry-level positions across data analytics, data engineering, data science,
+          and related data fields. I welcome connections and opportunities to collaborate.
         </p>
 
         {/* Contact details */}

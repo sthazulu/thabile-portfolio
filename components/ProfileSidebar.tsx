@@ -34,7 +34,7 @@ const ProfileSidebar = () => {
           Thabile Zulu
         </h1>
         <p className="text-purple text-sm mt-1 font-medium">
-          Data Analyst | Cloud &amp; Technology Enthusiast
+          Informatics Graduate (Cum Laude) | Aspiring Data &amp; Cloud Professional
         </p>
       </div>
 

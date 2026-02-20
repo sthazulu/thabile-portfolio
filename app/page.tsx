@@ -18,6 +18,15 @@ const Home = () => {
       <div className="max-w-4xl w-full">
         <div className="pt-10 pb-10">
 
+          {/* Hero title */}
+          <div className="text-center py-10 animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white">
+              Thabile Zulu{" "}
+              <span className="text-purple">Portfolio</span>
+            </h1>
+            <div className="mt-3 w-16 h-0.5 bg-purple mx-auto opacity-60 rounded-full" />
+          </div>
+
           {/* Tab bar */}
           <div className="flex gap-1 border-b border-white/[0.1] mb-2 overflow-x-auto">
             {tabs.map((tab) => (

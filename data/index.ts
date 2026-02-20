@@ -60,23 +60,24 @@ export const skills = [
   },
   {
     quote:
-      "AWS Re/Start graduate with hands-on exposure to AWS cloud services, Linux, Python scripting, networking, and cloud security fundamentals.",
+      "AWS Cloud Practitioner Certified - AWS Re/Start graduate with hands-on exposure to AWS cloud services, Linux, Python scripting, networking, and cloud security fundamentals.",
     name: "AWS Cloud",
     title: "Cloud & Infrastructure",
   },
 ];
 
 export const skillCategories = [
-  "SQL & Databases",
+  "SQL",
   "Python",
-  "Power BI & Excel",
-  "Data Cleaning & Reporting",
+  "Data Cleaning",
+  "Data Visualisation",
+  "Power BI",
+  "Microsoft Excel",
   "Microsoft Azure",
   "AWS Cloud",
-  "Pandas & NumPy",
-  "Matplotlib & Seaborn",
-  "Git",
-  "ETL & ELT Basics",
+  "Analytical Thinking",
+  "Attention to Detail",
+  "Communication",
 ];
 
 export const certifications = [
@@ -87,7 +88,7 @@ export const certifications = [
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
     issuer: "Microsoft — 2026",
-    link: "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+    link: "https://lnkd.in/d--RhZes",
   },
   {
     id: 2,
@@ -95,7 +96,7 @@ export const certifications = [
     desc: "Earned through the AWS Re/Start Graduate Programme — covering Python, databases, Linux, networking, cloud security, and core AWS services.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
-    issuer: "Amazon Web Services",
+    issuer: "Amazon Web Services — 2025",
     link: "https://www.credly.com/go/20XwkbKKhRU27loqHmFb9A",
   },
   {
@@ -104,7 +105,7 @@ export const certifications = [
     desc: "Foundational training covering data types, data wrangling, statistics, visualisation, and analytical thinking skills.",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
-    issuer: "Cisco Networking Academy",
+    issuer: "Cisco Networking Academy — 2026",
     link: "https://www.credly.com/badges/d72e40b4-1ed7-4a6d-b1e6-f703365ab79c",
   },
   {

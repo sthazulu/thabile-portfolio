@@ -1,9 +1,9 @@
-const seekingRoles = ["Data Analyst", "Data Engineer", "Data Scientist", "Data Related Fields"];
+const seekingRoles = ["Data Analyst", "Data Engineer", "Data Scientist", "Other Data Related Fields"];
 
 const qualifications = [
-  "National Senior Certificate — Khula High",
-  "Diploma in Informatics (Cum Laude) — Tshwane University of Technology",
-  "Advanced Diploma in Informatics (In Progress) — Tshwane University of Technology",
+  "National Senior Certificate — Khula High (2018)",
+  "Diploma in Informatics (Cum Laude) — Tshwane University of Technology (2025)",
+  "Advanced Diploma in Informatics — Tshwane University of Technology (In Progress)",
 ];
 
 const AboutSection = () => {
@@ -31,11 +31,8 @@ const AboutSection = () => {
           {/* Name, tagline, summary */}
           <div className="p-8 flex flex-col justify-center gap-3">
             <div>
-              <h1 className="text-2xl font-bold text-white leading-tight">
-                Thabile Zulu
-              </h1>
               <p className="text-purple text-sm mt-1 font-medium">
-                Data Analyst | Cloud &amp; Technology Enthusiast
+                Informatics Graduate (Cum Laude) | Aspiring Data &amp; Cloud Professional
               </p>
             </div>
             <p className="text-white-200 text-sm leading-relaxed">
