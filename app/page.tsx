@@ -21,7 +21,7 @@ const Home = () => {
           {/* Hero title */}
           <div className="text-center py-10 animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white">
-              Thabile Zulu{" "}
+              Thabile Zulu&apos;s{" "}
               <span className="text-purple">Portfolio</span>
             </h1>
             <div className="mt-3 w-16 h-0.5 bg-purple mx-auto opacity-60 rounded-full" />

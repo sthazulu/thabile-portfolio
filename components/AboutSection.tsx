@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const seekingRoles = ["Data Analyst", "Data Engineer", "Data Scientist", "Other Data Related Fields"];
 
 const qualifications = [
@@ -20,18 +22,21 @@ const AboutSection = () => {
       >
         <div className="flex flex-col sm:flex-row gap-0">
           {/* Photo */}
-          <div className="sm:w-52 shrink-0">
-            <img
+          <div className="sm:w-52 shrink-0 relative h-56">
+            <Image
               src="/thabile.jpg"
               alt="Thabile Zulu"
-              className="w-full h-56 sm:h-full object-cover object-top"
+              fill
+              className="object-cover object-top"
+              sizes="(max-width: 640px) 100vw, 208px"
+              priority
             />
           </div>
 
           {/* Name, tagline, summary */}
           <div className="p-8 flex flex-col justify-center gap-3">
             <div>
-              <p className="text-purple text-sm mt-1 font-medium">
+              <p className="text-purple text-base mt-1 font-medium">
                 Informatics Graduate (Cum Laude) | Aspiring Data &amp; Cloud Professional
               </p>
             </div>

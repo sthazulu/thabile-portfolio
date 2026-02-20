@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FaGithub, FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 
@@ -26,15 +27,20 @@ const RecentProjects = () => {
               className="relative h-40 flex items-center justify-center overflow-hidden"
               style={{ backgroundColor: "#13162D" }}
             >
-              <img
+              <Image
                 src="/bg.png"
-                alt="bg"
-                className="absolute inset-0 w-full h-full object-cover opacity-60"
+                alt=""
+                aria-hidden="true"
+                fill
+                className="object-cover opacity-60"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
-              <img
+              <Image
                 src={item.img}
                 alt={item.title}
-                className="relative z-10 h-20 w-20 object-contain"
+                width={80}
+                height={80}
+                className="relative z-10 object-contain"
               />
             </div>
 
@@ -58,7 +64,7 @@ const RecentProjects = () => {
                     className="border border-white/[.2] rounded-full bg-black w-8 h-8 flex justify-center items-center"
                     style={{ transform: `translateX(-${5 * index + 2}px)` }}
                   >
-                    <img src={icon} alt="tech" className="p-2" />
+                    <Image src={icon} alt="" aria-hidden={true} width={32} height={32} className="p-2" />
                   </div>
                 ))}
               </div>

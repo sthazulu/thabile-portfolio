@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
 import { certifications } from "@/data";
 
@@ -20,7 +21,7 @@ const Experience = () => {
             }}
           >
             <div className="shrink-0 w-12 h-12 rounded-xl bg-purple/10 border border-purple/20 flex items-center justify-center">
-              <img src={card.thumbnail} alt={card.title} className="w-7 h-7 object-contain" />
+              <Image src={card.thumbnail} alt={card.title} width={28} height={28} className="object-contain" />
             </div>
             <div className="flex flex-col gap-1 min-w-0">
               <h2 className="font-bold text-white text-base leading-snug">{card.title}</h2>

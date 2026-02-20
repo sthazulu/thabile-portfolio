@@ -1,18 +1,10 @@
-export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Skills", link: "#skills" },
-  { name: "Certifications", link: "#certifications" },
-  { name: "Contact", link: "#contact" },
-];
-
 export const projects = [
   {
     id: 1,
     title: "Sales Data Analysis Dashboard",
     des: "Built an interactive sales dashboard using Excel and Power BI to visualise revenue trends, regional performance, and key business KPIs.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["/app.svg", "/s.svg", "/cloud.svg", "/git.svg", "/c.svg"],
     link: "https://github.com/sthazulu",
   },
   {
@@ -20,7 +12,7 @@ export const projects = [
     title: "Python Data Analysis Project",
     des: "Conducted exploratory data analysis on a public dataset using Python, Pandas, and Matplotlib to identify trends and visualise insights.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/s.svg", "/app.svg", "/cloud.svg", "/git.svg", "/c.svg"],
     link: "https://github.com/sthazulu",
   },
   {
@@ -28,7 +20,7 @@ export const projects = [
     title: "Cloud-Based Data Solution",
     des: "Designed a basic cloud architecture demo using AWS and Azure services to demonstrate data storage, processing, and retrieval concepts.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["/cloud.svg", "/dock.svg", "/host.svg", "/git.svg", "/c.svg"],
     link: "https://github.com/sthazulu",
   },
 ];
@@ -92,7 +84,7 @@ export const certifications = [
   },
   {
     id: 2,
-    title: "AWS Cloud Practitioner Certificate",
+    title: "AWS Certified Cloud Practitioner",
     desc: "Earned through the AWS Re/Start Graduate Programme — covering Python, databases, Linux, networking, cloud security, and core AWS services.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
@@ -119,15 +111,3 @@ export const certifications = [
   },
 ];
 
-export const socialMedia = [
-  {
-    id: 1,
-    img: "/git.svg",
-    link: "https://github.com/sthazulu",
-  },
-  {
-    id: 2,
-    img: "/link.svg",
-    link: "https://www.linkedin.com/in/thabile-zulu-507976201/",
-  },
-];
